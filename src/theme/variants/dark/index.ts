@@ -1,0 +1,111 @@
+export const colors = {
+  primary: '#FF4081',
+  body: '#f5f5f5',
+  constrastBody: '#2a2a2a',
+  layer1: '#0A0A0A',
+  layer2: '#1F1F1F',
+  layer3: '#292929',
+  panel: '#1F1F1F',
+  warning: '#EBD147',
+  danger: '#EB7E47',
+  success: '#7EEB47',
+  accent: '#EB4747',
+  attention: '#FF4081',
+  info: '#4799EB',
+  seperator: '#333333',
+  hideBody: 'hsl(0, 0%, 40%)',
+  gray0: 'hsl(0, 0%, 100%)',
+  gray10: 'hsl(0, 0%, 90%)',
+  gray20: 'hsl(0, 0%, 80%)',
+  gray30: 'hsl(0, 0%, 70%)',
+  gray40: 'hsl(0, 0%, 60%)',
+  gray50: 'hsl(0, 0%, 50%)',
+  gray60: 'hsl(0, 0%, 40%)',
+  gray70: 'hsl(0, 0%, 30%)',
+  gray80: 'hsl(0, 0%, 20%)',
+  gray90: 'hsl(0, 0%, 18%)',
+  gray92: 'hsl(0, 0%, 16%)',
+  gray94: 'hsl(0, 0%, 14%)',
+  gray96: 'hsl(0, 0%, 12%)',
+  gray98: 'hsl(0, 0%, 10%)',
+  gray100: 'hsl(0, 0%, 8%)',
+};
+
+export const fonts = {
+  headerXL: {
+    //        fontFamily: "VarelaRound-Regular",
+    fontWeight: '700',
+    lineHeight: 41.6,
+    fontSize: 32,
+  },
+  headerLG: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '600',
+    lineHeight: 26,
+    fontSize: 22,
+  },
+  headerMD: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '500',
+    lineHeight: 24.7,
+    fontSize: 20,
+  },
+  headerSM: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 23.4,
+    fontSize: 18,
+  },
+  headerXS: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 23.06,
+    fontSize: 16,
+  },
+  headerRG: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 22.72,
+    fontSize: 14,
+  },
+  headerXXSM: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 20.72,
+    fontSize: 12,
+  },
+  body: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 22.72,
+    fontSize: 14,
+  },
+  caption: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    letterSpacing: -0.5,
+    lineHeight: 14.4,
+    fontSize: 10,
+  },
+  button: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    lineHeight: 23.4,
+    fontSize: 18,
+  },
+  overline: {
+    // fontFamily: 'VarelaRound-Regular',
+    fontWeight: '400',
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+    fontSize: 12,
+  },
+};
+
+const theme = {
+  key: 'dark',
+  fonts,
+  colors,
+};
+
+export default theme;

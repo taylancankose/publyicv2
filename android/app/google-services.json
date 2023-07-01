@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "598218265043",
+    "project_id": "publyic",
+    "storage_bucket": "publyic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598218265043:android:950d4fd914b80f66329f26",
+        "android_client_info": {
+          "package_name": "com.publyicv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598218265043-jf0im3jhqpai0kd4nffng9h9hq5vq2km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.publyicv2",
+            "certificate_hash": "89b9b1a5cc3f3b4da7d8f62e90fab475a60bef1d"
+          }
+        },
+        {
+          "client_id": "598218265043-mjvpqjsl6sia1pnd3cteatvl6ver59hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK9sec4Lpdfdo7z360orke8tYixbWprNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598218265043-84e2d5ds2jrf4ib0klusfco6ascf8spj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

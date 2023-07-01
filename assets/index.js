@@ -1,0 +1,13 @@
+export {default as HeroImage} from './hero.png';
+export {default as Attractions} from './attraction.png';
+export {default as Restaurants} from './cafe.png';
+export {default as NotFound} from './NotFound.png';
+export {default as Beer} from './beer.png';
+export {default as Cafe} from './sign.png';
+export {default as Coffee} from './coffee.png';
+export {default as Pub} from './pub.png';
+export {default as Pizza} from './pizza.png';
+export {default as Time} from './time.png';
+export {default as HotDeal} from './hot-deal.png';
+export {default as HotSale} from './hot-sale.png';
+export {default as Hot} from './hot.png';
