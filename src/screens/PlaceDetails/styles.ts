@@ -31,4 +31,27 @@ export default StyleSheet.create({
   address: {
     marginLeft: 5,
   },
+  description: {
+    paddingHorizontal: 15,
+    marginVertical: 10,
+  },
+  reviewContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  reviews: {
+    fontSize: 18,
+    color: '#1f2122',
+    fontWeight: '500',
+  },
+  reviewNums: {
+    fontWeight: '400',
+    fontSize: 14,
+    alignItems: 'center',
+    color: 'gray',
+  },
+  seeAll: {
+    color: 'cornflowerblue',
+  },
 });

@@ -5,7 +5,6 @@ const {width, height} = Dimensions.get('window');
 export default StyleSheet.create({
   container: {
     height: height / 2,
-    width: width,
     justifyContent: 'center',
     alignItems: 'center',
   },

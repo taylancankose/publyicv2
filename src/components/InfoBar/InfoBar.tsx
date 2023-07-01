@@ -29,6 +29,8 @@ const InfoBar = ({place, totalRating}) => {
       )
       .replace('AM', '')
       .replace('AM', '')
+      .replace('PM', '')
+      .replace('PM', '')
       .replace(/\s/g, '');
   return (
     <View style={styles.statContainer}>

@@ -1,4 +1,11 @@
-import {View, Text, TouchableOpacity, ScrollView, FlatList} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  FlatList,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import React, {useEffect, useContext} from 'react';
 import {useRoute} from '@react-navigation/native';
 import {PlaceContext} from '../../context/PlaceContext';
@@ -6,6 +13,7 @@ import styles from './styles';
 import Slider from '../../components/Slider/Slider';
 import Icon from 'react-native-vector-icons/Ionicons';
 import InfoBar from '../../components/InfoBar/InfoBar';
+import ReviewCard from '../../components/ReviewCard/ReviewCard';
 
 const PlaceDetails = () => {
   const router = useRoute();
@@ -37,23 +45,34 @@ const PlaceDetails = () => {
           </TouchableOpacity>
         </View>
         <InfoBar place={selectPlace?.result} totalRating={totalRating} />
-        <Text
-          style={{
-            paddingHorizontal: 15,
-            marginVertical: 10,
-          }}>
-          {selectPlace?.result?.editorial_summary?.overview}
-        </Text>
+        {selectPlace?.result?.editorial_summary?.overview && (
+          <Text style={styles.description}>
+            {selectPlace?.result?.editorial_summary?.overview}
+          </Text>
+        )}
         <View
           style={{
-            paddingHorizontal: 15,
+            marginHorizontal: 15,
             marginVertical: 10,
-            flex: 1,
           }}>
-          <Text>Reviews ({selectPlace?.result?.reviews.length})</Text>
+          <View style={styles.reviewContainer}>
+            <Text style={styles.reviews}>
+              {' '}
+              Reviews
+              <Text style={styles.reviewNums}>
+                {' '}
+                ({selectPlace?.result?.reviews.length})
+              </Text>
+            </Text>
+            <TouchableWithoutFeedback>
+              <Text style={styles.seeAll}>See All</Text>
+            </TouchableWithoutFeedback>
+          </View>
           <FlatList
-            data={selectPlace?.result?.reviews}
-            renderItem={({item}) => <Text key={item.time}>{item.text}</Text>}
+            showsHorizontalScrollIndicator={false}
+            horizontal
+            data={selectPlace?.result?.reviews.slice(0, 6)}
+            renderItem={({item}) => <ReviewCard item={item} key={item.id} />}
           />
         </View>
       </View>
